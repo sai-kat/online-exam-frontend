@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  loginPayload: any = {};
+  signupPayload: any = {};
+
+  loginUrl: string = "/login";
+  signupUrl: string = "/signup";
+
   constructor() { }
+
+  submitLoginPayload(){
+    console.log(this.loginPayload);
+  }
+
+  submitSignupPayload(){
+    console.log(this.signupPayload);
+  }
 
   ngOnInit(): void {
   }
-
 }
